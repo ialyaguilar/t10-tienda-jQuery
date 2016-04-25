@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Tienda con jQuery</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <input id="producto" type="text" placeholder="Producto"/>
+    <input id="precio" type="number" placeholder="Precio" step="0.01"/>
+    <button onclick="agregar(producto, precio);">Agregar</button>
+    <br/><br/>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>PRODUCTO</th>
+          <th>PRECIO</th>
+          <th>ELIMINAR</th>
+        </tr>
+      </thead>
+      <tbody id="contenedor">
+        <tr>
+          <!-- Aqui se agregando las filas -->
+        </tr>
+      </tbody>
+      <tfoot>
+        <td></td>
+        <td>TOTAL</td>
+        <td id="total"></td>
+      </tfoot>
+    </table>
+    <script src="code.js"></script>
+  </body>
+</html>
